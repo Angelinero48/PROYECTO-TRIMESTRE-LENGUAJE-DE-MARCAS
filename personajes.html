@@ -32,13 +32,30 @@
         .espacio6 { grid-area: desc1;}
         .espacio7 { grid-area: desc2;}
         .espacio8 { grid-area: desc3;}
+        .espacio9 { grid-area: desc4;}
+        .espacio10 {grid-area: pj1;}
+        .espacio12 {grid-area: pj2;}
+        .espacio14 {grid-area: pj3;}
+        .espacio16 {grid-area: pj4;}
+        .espacio18 {grid-area: info;}
+        .espacio19 {grid-area: info2;}
+        .espacio20 {grid-area: name1;}
+        .espacio21 {grid-area: name2;}
+        .espacio22 {grid-area: name3;}
+        .espacio23 {grid-area: name4;}
 
         .grid-container {
         display: grid;
         grid-template-areas:
         'header header header header header header'
+        'info info info info info info'
         'rol1 desc1 desc1 desc1 desc1 desc1'
-        'rol2 desc2 desc2 desc2 desc2 desc2';
+        'rol2 desc2 desc2 desc2 desc2 desc2'
+        'rol3 desc3 desc3 desc3 desc3 desc3'
+        'rol4 desc4 desc4 desc4 desc4 desc4'
+        'info2 info2 info2 info2 info2 info2'
+        'pj1 pj1 pj2 pj2 pj3 pj4'
+        'name1 name1 name2 name2 name3 name4';
         gap: 10px;
         background-color: #1b1d1f;
         padding: 10px;
@@ -52,6 +69,7 @@
         }
         .head{
             color: antiquewhite;
+            font-size: 50px;
         }
         .desc{
             color: white;
@@ -66,11 +84,25 @@
 <body>
     <div class="grid-container">
         <div class="espacio1"><p align="center" class="head" style="font-family: 'Valorant';">ROLES Y PERSONAJES</p></div>
+        <div class="espacio18"><p align="center" class="desc">¿Qué son los ROLES?<br><br><br><br> Los <u> ROLES</u> son las funciones básicas que tienen los personajes en las distintas partidas. Aquí tienes la explicación de cada uno.</p></div>
         <div class="espacio2"><img src="imagenes/personajes y roles/duelista.png" width="100px" height="100px">  </div>
         <div class="espacio6"><p align="left" class="desc"><br>DUELISTA: Son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y 
             anotar muchos asesinatos. </p></div>  
         <div class="espacio3"><img src="imagenes/personajes y roles/controlador.png" width="100px" height="100px"></div>
         <div class="espacio7"><p align="left" class="desc"> <br>CONTROLADOR: Se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.</p></div>
-      </div>
+        <div class="espacio4"><img src="imagenes/personajes y roles/iniciador.png" width="100px" height="100px">  </div>
+        <div class="espacio8"><p align="left" class="desc"><br>INICIADOR: Expertos en recopilar información y controlar los movimientos de los oponentes usando sus propias habilidades. </p> </div>
+        <div class="espacio5"><img src="imagenes/personajes y roles/centinela.png" width="100px" height="100px">  </div>
+        <div class="espacio9"><p align="left" class="desc"><br> CENTINELA: Expertos en defensa que se centran en bloquear áreas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa. </p> </div>
+        <div class="espacio19"><p align="center" class="desc"> Aquí abajo tenemos diferentes personajes, cada uno con su rol debajo.</p></div>
+        <div class="espacio20"><p align="center" class="desc" style="font-family: 'Valorant';"> DUELISTA</p></div>
+        <div class="espacio21"><p align="center" class="desc" style="font-family: 'Valorant';"> CONTROLADOR</p></div>
+        <div class="espacio22"><p align="center" class="desc" style="font-family: 'Valorant';"> CENTINELA</p></div>
+        <div class="espacio23"><p align="center" class="desc" style="font-family: 'Valorant';"> INICIADOR</p></div>
+        <div class="espacio10"><img src="imagenes/personajes y roles/jett.png" width="200px" height="300px"> </div>
+        <div class="espacio12"><img src="imagenes/personajes y roles/Omen.png" width="200px" height="300px"></div>
+        <div class="espacio14"><img src="imagenes/personajes y roles/cypher.png" width="200px" height="300px"></div>
+        <div class="espacio16"><img src="imagenes/personajes y roles/sova.png" width="200px" height="300px"></div>
+    </div>
 </body>
 </html>

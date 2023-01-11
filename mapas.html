@@ -22,7 +22,7 @@
         }
         * {box-sizing:border-box}
 .slideshow-container {
-  max-width: 700px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -84,12 +84,15 @@
 }
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 4s;
 }
 
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+.under{
+  text-decoration: underline;
 }
     </style>
     
@@ -98,21 +101,31 @@
     <h1 style="font-family: 'Valorant';">MAPAS</h1>
     <div class="slideshow-container">
         <div class="mySlides fade">
-          <div class="numbertext"><p style="font-family: 'Valorant';">1 / 3</p></div>
+          <div class="numbertext"><p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">1 / 5</p></div>
           <img src="imagenes/mapas/ascent.jpg" style="width:100%">
           <div class="text"><p style="font-family: 'Valorant';">ASCENT</p></div>
         </div>
       
         <div class="mySlides fade">
-          <div class="numbertext"><p style="font-family: 'Valorant';">2 / 3</p></div>
+          <div class="numbertext"><p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">2 / 5</p></div>
           <img src="imagenes/mapas/bind.png" style="width:100%">
           <div class="text"><p style="font-family: 'Valorant';">BIND</p></div>
         </div>
       
         <div class="mySlides fade">
-          <div class="numbertext"><p style="font-family: 'Valorant';">3 / 3</p></div>
+          <div class="numbertext"><p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">3 / 5</p></div>
           <img src="imagenes/mapas/pearl.png" style="width:100%">
           <div class="text"><p style="font-family: 'Valorant';">PEARL</p></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext"><p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">4 / 5</p></div>
+          <img src="imagenes/mapas/split.jpg" style="width:100%">
+          <div class="text"><p style="font-family: 'Valorant';">SPLIT</p></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext"><p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">5 / 5</p></div>
+          <img src="imagenes/mapas/breeeeze.png" style="width:100%">
+          <div class="text"><p style="font-family: 'Valorant';">BREEZE</p></div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -122,7 +135,12 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div><br><br><br><br>
+      <h1 class="under" style="font-family: 'Valorant';" >MAPA X MAPA</h1>
+
+
       <script type="text/javascript">
         let slideIndex = 1;
 showSlides(slideIndex);
