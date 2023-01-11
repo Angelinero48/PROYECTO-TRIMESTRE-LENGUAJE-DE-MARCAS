@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            background-color: rgb(129, 39, 39);
+            background-color: rgb(26, 26, 27);
         }
         @font-face {
             font-family: 'Valorant';
@@ -23,11 +23,54 @@
         .audio{
             background-color: rgb(219, 91, 91);
             border-style: solid;
-            border-color: white;
+            border-color: white;}
+        .espacio1 { grid-area: header;}
+        .espacio2 { grid-area: rol1; }
+        .espacio3 { grid-area: rol2; }
+        .espacio4 { grid-area: rol3; }
+        .espacio5 { grid-area: rol4; }
+        .espacio6 { grid-area: desc1;}
+        .espacio7 { grid-area: desc2;}
+        .espacio8 { grid-area: desc3;}
+
+        .grid-container {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'rol1 desc1 desc1 desc1 desc1 desc1'
+        'rol2 desc2 desc2 desc2 desc2 desc2';
+        gap: 10px;
+        background-color: #1b1d1f;
+        padding: 10px;
+        }
+
+        .grid-container > div {
+        background-color: #1b1d1f;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+        .head{
+            color: antiquewhite;
+        }
+        .desc{
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+        }
+        .header{
+            background-color: red;
         }
     </style>
 </head>
 <body>
-    <h1 style="font-family: 'Valorant';">ROLES Y PERSONAJES</h1>    
+    <div class="grid-container">
+        <div class="espacio1"><p align="center" class="head" style="font-family: 'Valorant';">ROLES Y PERSONAJES</p></div>
+        <div class="espacio2"><img src="imagenes/personajes y roles/duelista.png" width="100px" height="100px">  </div>
+        <div class="espacio6"><p align="left" class="desc"><br>DUELISTA: Son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y 
+            anotar muchos asesinatos. </p></div>  
+        <div class="espacio3"><img src="imagenes/personajes y roles/controlador.png" width="100px" height="100px"></div>
+        <div class="espacio7"><p align="left" class="desc"> <br>CONTROLADOR: Se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.</p></div>
+      </div>
 </body>
 </html>
