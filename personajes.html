@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VALOKHANO-Información Valorant</title>
     <style>
         body{
             background-color: rgb(26, 26, 27);
@@ -43,6 +43,7 @@
         .espacio21 {grid-area: name2;}
         .espacio22 {grid-area: name3;}
         .espacio23 {grid-area: name4;}
+        .espacio24 {grid-area: back;}
 
         .grid-container {
         display: grid;
@@ -55,7 +56,8 @@
         'rol4 desc4 desc4 desc4 desc4 desc4'
         'info2 info2 info2 info2 info2 info2'
         'pj1 pj1 pj2 pj2 pj3 pj4'
-        'name1 name1 name2 name2 name3 name4';
+        'name1 name1 name2 name2 name3 name4'
+        'back back back back back back';
         gap: 10px;
         background-color: #1b1d1f;
         padding: 10px;
@@ -79,7 +81,16 @@
         .header{
             background-color: red;
         }
+        button{
+            border-style: solid;
+            border-radius: 2px;
+            border-color: rgb(255, 255, 255);
+            background-color: rgba(29, 28, 28, 0.74);
+            color: rgb(255, 255, 255);}
     </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/icono_pestaña/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imagenes/icono_pestaña/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/icono_pestaña/favicon-16x16.png">
 </head>
 <body>
     <div class="grid-container">
@@ -103,6 +114,7 @@
         <div class="espacio12"><img src="imagenes/personajes y roles/Omen.png" width="200px" height="300px"></div>
         <div class="espacio14"><img src="imagenes/personajes y roles/cypher.png" width="200px" height="300px"></div>
         <div class="espacio16"><img src="imagenes/personajes y roles/sova.png" width="200px" height="300px"></div>
+        <div class="espacio24"><button onclick="window.location.href='paginaprincipal.html'"><p style="font-family: 'Valorant';">VOLER A VALOKHANO</p></button></div>
     </div>
 </body>
 </html>
