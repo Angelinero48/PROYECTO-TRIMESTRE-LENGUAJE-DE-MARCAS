@@ -110,7 +110,7 @@
 .espacio13 {grid-area: inicio;}
 .grid-container {
 display: grid;
- grid-template-areas:
+grid-template-areas:
 'mapa1 desc1 desc1 desc1 desc1 desc1'
 'mapa2 desc2 desc2 desc2 desc2 desc2'
 'mapa3 desc3 desc3 desc3 desc3 desc3'
@@ -118,15 +118,21 @@ display: grid;
 'mapa5 desc5 desc5 desc5 desc5 desc5'
 'inicio inicio inicio inicio inicio inicio';
 gap: 10px;
-background-color: rgb(129,39,39);
+background-color: rgba(230, 240, 198, 0);
 padding: 10px;}
+.grid-container-header{
+  display: grid;
+  grid-template-areas: 
+  'home header header header header header'
+  ;
+}
 .desc{
 color: white;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-size: 20px;
 }
 .grid-container > div {
-        background-color: rgb(129,39,39);
+        background-color: rgba(91, 22, 22, 0.813);
         text-align: center;
         padding: 20px 0;
         font-size: 30px;
@@ -161,8 +167,9 @@ button{
     
 </head>
 <body>
+<h1 style="font-family: 'Valorant';" class="mapaxmapa">MAPAS</h1>
+  </div>
     <a name="inicio"></a>
-    <h1 style="font-family: 'Valorant';">MAPAS</h1>
     <div class="slideshow-container">
         <div class="mySlides fade">
           <div class="numbertext"><p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">1 / 5</p></div>
