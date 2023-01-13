@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VALOKHANO</title>
     <style>
         body{
-            background-color: rgb(129, 39, 39);
+            background-image: url(imagenes/fondo/fondomapas.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
         }
         @font-face {
             font-family: 'Valorant';
@@ -84,20 +86,67 @@
 }
 .fade {
   animation-name: fade;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 @keyframes fade {
   from {opacity: .4}
-  to {opacity: 1}
+  to {opacity: 3}
 }
 .under{
   text-decoration: underline;
 }
-    </style>
+.espacio2 { grid-area: mapa1; }
+.espacio3 { grid-area: mapa2; }
+.espacio4 { grid-area: mapa3; }
+.espacio5 { grid-area: mapa4; }
+.espacio6 { grid-area: mapa5; }
+.espacio8 { grid-area: desc1; }
+.espacio9 { grid-area: desc2; }
+.espacio10 { grid-area: desc3; }
+.espacio11 { grid-area: desc4; }
+.espacio12 { grid-area: desc5; }
+.espacio13 {grid-area: inicio;}
+.grid-container {
+display: grid;
+ grid-template-areas:
+'mapa1 desc1 desc1 desc1 desc1 desc1'
+'mapa2 desc2 desc2 desc2 desc2 desc2'
+'mapa3 desc3 desc3 desc3 desc3 desc3'
+'mapa4 desc4 desc4 desc4 desc4 desc4'
+'mapa5 desc5 desc5 desc5 desc5 desc5'
+'inicio inicio inicio inicio inicio inicio';
+gap: 10px;
+background-color: rgb(129,39,39);
+padding: 10px;}
+.desc{
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 20px;
+}
+.grid-container > div {
+        background-color: rgb(129,39,39);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+.inicio{
+  background-color: rgb(129,39,39);
+  text-align: center;
+  color: white;
+
+}
+a:link{
+  color: white;
+}
+a:visited{
+  color: white;
+}
+</style>
     
 </head>
 <body>
+    <a name="inicio"></a>
     <h1 style="font-family: 'Valorant';">MAPAS</h1>
     <div class="slideshow-container">
         <div class="mySlides fade">
@@ -139,9 +188,27 @@
         <span class="dot" onclick="currentSlide(5)"></span>
       </div><br><br><br><br>
       <h1 class="under" style="font-family: 'Valorant';" >MAPA X MAPA</h1>
-
-
+      <div class="grid-container">
+      <div class="espacio2"><img src="imagenes/mapas/ascent.jpg" width="500px" height="300px">  </div>
+        <div class="espacio8"><p align="center" class="desc"><br><br><br>ASCENT: Escenario ambientado en Venecia y sus canales en el que encontramos 
+          una nueva mecánica única: las puertas. Se trata de un mecanismo de  doble filo que afecta a atacantes y defensores, volviéndose crucial una vez se planta la bomba.</p></div>  
+        <div class="espacio3"><img src="imagenes/mapas/bind.png" width="500px" height="300px"></div>
+        <div class="espacio9"><p align="center" class="desc"> <br><br><br>BIND: Se caracteriza por tener dos puntos donde podemos plantar la Spike, que se conectan por largos pasadizos plagados de ángulos y por portales que tenemos 
+          que utilizar con cabeza si no queremos que el equipo enemigo sepa nuestra posición en todo momento.</p></div>
+        <div class="espacio4"><img src="imagenes/mapas/breeeeze.png" width="500px" height="300px">  </div>
+        <div class="espacio10"><p align="center" class="desc"><br><br><br><br>BREEZE: Se ubica en una isla remota caracterizada por sus paisajes brillantes, cálidos y coloridos, con grandes espacios abiertos que se prestan para los combates a larga distancia. </p> </div>
+        <div class="espacio5"><img src="imagenes/mapas/pearl.png" width="500px" height="300px">  </div>
+        <div class="espacio11"><p align="center" class="desc"><br><br><br><br>PEARL: Es el primer mapa Omega Earth de VALORANT que combina maravillas tecnológicas con un juego táctico de tres carriles. 
+          En un mundo al borde del colapso climático total, Kingdom Industries y los héroes de Omega encapsularon una ciudad entera en policarbonato imbuido con Radianita creando una maravbvilla bajo las olas</p> </div>
+        <div class="espacio6"><img src="imagenes/mapas/split.jpg" width="500px" height="300px">  </div>
+        <div class="espacio12"><p align="center" class="desc"><br><BR><BR>SPLIT: es uno de los tres mapas originales de VALORANT, el FPS de Riot Games. A diferencia de Bind o Haven, Split es un mapa algo diferente. Apenas con tres puntos se puede defender 
+          y tiene una zona de medio de vital importancia que da acceso a todo el mapa para los atacantes. Además, es el mapa que introduce las cuerdas para superar algunos desniveles.</p> </div>
+        
+        <div class="espacio13"><p align="center" class="desc"><a href="#inicio"><P style="font-family: 'Valorant';">VOLVER AL INICIO</P></a></div>
+        </div></div>
+        
       <script type="text/javascript">
+        
         let slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
