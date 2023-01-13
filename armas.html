@@ -7,7 +7,9 @@
     <title>VALOKHANO-Información Valorant</title>
     <style>
         body{
-            background-color: rgb(129, 39, 39);
+            background-image: url(imagenes/armas/fondo.png);
+            background-size: cover;
+            background-attachment: fixed;
         }
         @font-face {
             font-family: 'Valorant';
@@ -19,6 +21,62 @@
             color: bisque;
             text-align: center;
             font-size: 60px;
+            background-color: #1d6b679a;
+            border-style: solid;
+            border-radius: 12px;
+            border-color: antiquewhite;
+        }
+        .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+
+        height: 100px;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color:#1d6b67da;
+        border-style: solid;
+        border-radius: 12px;
+        border-color: antiquewhite;
+        }
+        .desc{
+            color: white;
+            font-size: 20px;
+        }
+        .espacio6 { grid-area: img1;}
+        .espacio7 { grid-area: img2;}
+        .espacio8 { grid-area: img3;}
+        .espacio9 { grid-area: img4;}
+        .espacio10 {grid-area: aud1;}
+        .espacio12 {grid-area: aud2;}
+        .espacio14 {grid-area: aud3;}
+        .espacio16 {grid-area: aud4;}
+        .espacio18 {grid-area: info;}
+        .espacio19 {grid-area: info2;}
+        .espacio20 {grid-area: name1;}
+        .espacio21 {grid-area: name2;}
+        .espacio22 {grid-area: name3;}
+        .espacio23 {grid-area: name4;}
+        .espacio24 {grid-area: back;}
+
+        .grid-container {
+        display: grid;
+        grid-template-areas:
+        
+        'img1 img2 img3 img4'
+        'aud1 aud2 aud3 aud4'
+        'nom5 nom6 nom7 nom8'
+        'img5 img6 img7 img8'
+        'aud5 aud6 aud7 aud'
+        ;
+        gap: 10px;
+        background-color: #1d6b67d5;
+        padding: 10px;
+        justify-content: space-between;
+        border-style: solid;
+        border-radius: 12px;
+        border-color: antiquewhite;
         }
     </style>
     <link rel="icon" type="image/png" sizes="32x32" href="imagenes/icono_pestaña/favicon-32x32.png">
@@ -27,6 +85,23 @@
 </head>
 <body>
     <h1 style="font-family: 'Valorant';">ARMAS</h1>
-    
+    <div class="flex-container">
+        <div class="desc" style="font-family: 'Valorant';">Pipas</div>
+        <div class="desc" style="font-family: 'Valorant';">Corto alcance</div>
+        <div class="desc" style="font-family: 'Valorant';">Largo alcance</div>
+        <div class="desc" style="font-family: 'Valorant';">Francotiradores</div>
+      </div>
+      <br><br><br>
+    <div class="grid-container">
+        <div class="espacio6"><img src="imagenes/armas/classic.png" width="150px" height="100px"><p></p> </div>
+        <div class="espacio7"><img src="imagenes/armas/Spectre.png" width="200px" height="100px"> </div>
+        <div class="espacio8"><img src="imagenes/armas/Vandal.png" width="250px" height="100px"> </div>
+        <div class="espacio9"><img src="imagenes/armas/operator.png" width="400px" height="100px"> </div>
+        <div class="espacio14"><audio src="audioarmas/vandal.mp3" controls="controls"></audio> </div>
+        <div class="espacio10"><audio src="audioarmas/classic.mp3" controls="controls"></audio> </div>
+        <div class="espacio12"><audio src="audioarmas/spectre.mp4" controls="controls"></audio> </div>
+        <div class="espacio16"><audio src="audioarmas/operator.mp4" controls="controls"></audio> </div>
+        
+    </div>
 </body>
 </html>
